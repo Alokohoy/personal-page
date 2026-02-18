@@ -1,0 +1,54 @@
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://cdn.imgchest.com/files/j7kzcbnrz7m.png");
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.container > * {
+  background-color: #ffffff;
+  font-size: 10rem;
+  color: #e00000;
+  border: 2px dashed #e00000;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.box1 {
+  flex-basis: calc((100% - 16px) / 6);
+}
+
+.box2 {
+  flex-basis: calc((100% - 16px) * 2 / 6);
+}
+
+.box3 {
+  flex-basis: calc((100% - 16px) * 3 / 6);
+}
+
+.box4 {
+  flex-basis: calc((100% - 8px) * 4 / 6);
+}
+
+.box5 {
+  flex-basis: calc((100% - 8px) * 2 / 6);
+}
+
+.box6 {
+  flex-basis: 100%;
+}
